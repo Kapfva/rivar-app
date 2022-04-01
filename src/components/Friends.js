@@ -1,12 +1,19 @@
-import React from 'react';
+import React, { Fragment, useState, useEffect } from 'react';
 
 import { Link } from 'react-router-dom';
 
 import Table from './layouts/Table';
 
 const Friends = ({ id, name, listFriends }) => {
+	const [friends, setfriends] = useState([]);
+	useEffect(() => {
+		const getBooks = () => {
+			fetch('');
+		};
+	}, []);
+
 	return (
-		<div>
+		<Fragment>
 			<nav className=" navbar-expand-lg navbar-light bg-light navbar">
 				<div className="container-fluid">
 					<div className="d-flex justify-content-end align-items-stretch">
@@ -35,11 +42,11 @@ const Friends = ({ id, name, listFriends }) => {
 			<div className="container">
 				{/* Fin Navbar  */}
 
-                
-
-				<Table headers="" list="" />
+				<div className='p-5'>
+					<Table headers="" list="" />
+				</div>
 			</div>
-		</div>
+		</Fragment>
 	);
 };
 
