@@ -1,9 +1,26 @@
-import React from 'react'
+import React from 'react';
 
-const User = () => {
-  return (
-    <div>User</div>
-  )
-}
+const User = ({name}) => {
+	return (
+		<div>
+			<Navbar />
+			<div className="container pt-5">
+				{/* Fin Navbar  */}
 
-export default User
+				<h1></h1>
+				<h2>Hare is your list of friends</h2>
+
+				<div className="p-5">
+					<Table headers="" list="" />
+				</div>
+
+				<h2>Other Users not on your friend´s list:</h2>
+				<div className="p-5">
+					<Table headers="" list="" />
+				</div>
+			</div>
+		</div>
+	);
+};
+
+export default User;

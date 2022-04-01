@@ -6,25 +6,25 @@ import Friends from './components/Friends';
 import User from './components/User';
 import NotFound from './components/NotFound';
 
-var mysql = require('mysql');
+// var mysql = require('mysql');
 
-var connection = mysql.createConnection({
-	host: 'localhost',
-	database: 'rivar-app',
-	user: 'root',
-	password: '',
-});
+// var connection = mysql.createConnection({
+// 	host: 'localhost',
+// 	database: 'rivar-app',
+// 	user: 'root',
+// 	password: '',
+// });
 
-connection.connect(function(error){
-  if(error){
-    throw error;
-  }
-  else{
-    console.log('connection succeed')
-  }
-});
+// connection.connect(function(error){
+//   if(error){
+//     throw error;
+//   }
+//   else{
+//     console.log('connection succeed')
+//   }
+// });
 
-connection.end();
+// connection.end();
 
 export default class App extends Component {
 

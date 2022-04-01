@@ -1,8 +1,10 @@
 import React, { Fragment, useState, useEffect } from 'react';
 
-import { Link } from 'react-router-dom';
+
+import Navbar from './layouts/Navbar';
 
 import Table from './layouts/Table';
+
 
 const Friends = ({ id, name, listFriends }) => {
 	const [friends, setfriends] = useState([]);
@@ -14,35 +16,19 @@ const Friends = ({ id, name, listFriends }) => {
 
 	return (
 		<Fragment>
-			<nav className=" navbar-expand-lg navbar-light bg-light navbar">
-				<div className="container-fluid">
-					<div className="d-flex justify-content-end align-items-stretch">
-						<li className="nav-item flex-fill">
-							{
-								<Link
-									className="nav-link "
-									activeclassname="active active-Link"
-									to={'/friends-' + name}
-								>
-									Home
-								</Link>
-							}
-						</li>
-						<li className="nav-item flex-fill">
-							{
-								<Link className="nav-link " activeclassname="active active-Link" to="/">
-									{(name = '')}
-									Logout
-								</Link>
-							}
-						</li>
-					</div>
-				</div>
-			</nav>
-			<div className="container">
+			<Navbar/>
+			<div className="container pt-5">
 				{/* Fin Navbar  */}
 
+                <h1>Hello, Steve!</h1>
+                <h2>Hare is your list of friends</h2>
+
 				<div className='p-5'>
+					<Table headers="" list="" />
+				</div>
+
+                <h2>Other Users not on your friend´s list:</h2>
+                <div className='p-5'>
 					<Table headers="" list="" />
 				</div>
 			</div>
