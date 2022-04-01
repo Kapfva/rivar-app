@@ -11,17 +11,9 @@ const User = ({name}) => {
 			<div className="container pt-5">
 				{/* Fin Navbar  */}
 
-				<h1></h1>
-				<h2>Hare is your list of friends</h2>
-
-				<div className="p-5">
-					<Table headers="" list="" />
-				</div>
-
-				<h2>Other Users not on your friend´s list:</h2>
-				<div className="p-5">
-					<Table headers="" list="" />
-				</div>
+				<h1>José's profile</h1>
+				<h2>Name:</h2>
+                <h2>Email:</h2>
 			</div>
 		</div>
 	);

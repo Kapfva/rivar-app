@@ -21,7 +21,7 @@ const Friends = ({ id, name, listFriends }) => {
 				{/* Fin Navbar  */}
 
                 <h1>Hello, Steve!</h1>
-                <h2>Hare is your list of friends</h2>
+                <h2>Here is your list of friends</h2>
 
 				<div className='p-5'>
 					<Table headers="" list="" />
