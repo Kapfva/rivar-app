@@ -1,17 +1,46 @@
-import React from 'react'
+import React from 'react';
 
-const Friends = () => {
-  return (
-    <div>
-        <div class="container">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-    </div>
-  </nav>
-</div>
-    </div>
-  )
-}
+import { Link } from 'react-router-dom';
 
-export default Friends
+import Table from './layouts/Table';
+
+const Friends = ({ id, name, listFriends }) => {
+	return (
+		<div>
+			<nav className=" navbar-expand-lg navbar-light bg-light navbar">
+				<div className="container-fluid">
+					<div className="d-flex justify-content-end align-items-stretch">
+						<li className="nav-item flex-fill">
+							{
+								<Link
+									className="nav-link "
+									activeclassname="active active-Link"
+									to={'/friends-' + name}
+								>
+									Home
+								</Link>
+							}
+						</li>
+						<li className="nav-item flex-fill">
+							{
+								<Link className="nav-link " activeclassname="active active-Link" to="/">
+									{(name = '')}
+									Logout
+								</Link>
+							}
+						</li>
+					</div>
+				</div>
+			</nav>
+			<div className="container">
+				{/* Fin Navbar  */}
+
+                
+
+				<Table headers="" list="" />
+			</div>
+		</div>
+	);
+};
+
+export default Friends;

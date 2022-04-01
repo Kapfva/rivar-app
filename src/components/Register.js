@@ -28,7 +28,7 @@ const register = () => {
 								type="text"
 								className="form-control"
 								id="aliasReg"
-								placeholder="Ej. Mayor"
+								placeholder="Ej. UserName"
 							/>
 						</div>
 					</div>
