@@ -1,4 +1,8 @@
 import React from 'react';
+import Navbar from './layouts/Navbar';
+
+import Table from './layouts/Table';
+
 
 const User = ({name}) => {
 	return (
